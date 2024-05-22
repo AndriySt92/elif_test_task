@@ -5,7 +5,7 @@ import { RegisterData } from "../interfaces/participantInterfaces"
 export const eventApi = createApi({
   reducerPath: "event",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:3001/api/event",
+    baseUrl: "https://eliftech-test-server.vercel.app/api/event",
   }),
 
   endpoints: builder => ({
