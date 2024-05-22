@@ -26,16 +26,4 @@
   cursor: pointer;
 }
 
-.header__buttons,
-.header__user {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.header__user-name {
-  font-size: 18px;
-  color: var(--color-white);
-}
-
 

@@ -1,0 +1,45 @@
+.sort__select {
+  position: relative;
+  outline: none;
+  appearance: none;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--color-dark);
+  background-image: none;
+  cursor: pointer;
+}
+
+.sort__select::-ms-expand {
+  display: none;
+}
+
+.sort__select {
+  font-size: 18px;
+}
+
+.sort {
+  position: relative;
+  display: flex;
+  width: 150px;
+  height: 35px;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.sort::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 9px;
+  background-color: var(--color-grey);
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+
+.sort:hover::after {
+  color: var(--color-white);
+}
