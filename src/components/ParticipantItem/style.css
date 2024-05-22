@@ -1,0 +1,36 @@
+.participant__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  color: var(--color-dark);
+}
+
+.participant__item-title {
+  font-family: var(--font-title);
+  font-size: var(--font-size_title);
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.participant__item-email {
+  margin-bottom: 10px;
+  color: var(--color-grey);
+  font-size: var(--font-size_subtitle);
+  font-family: var(--font-title);
+}
+
+/* @media screen and (max-width: 1289px) {
+  .participant__item {
+    flex: 1 0 49%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .participant__item {
+    flex: 1 0 80%;
+    max-width: 80%;
+  }
+} */

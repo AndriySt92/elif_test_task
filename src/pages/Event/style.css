@@ -1,0 +1,23 @@
+.event {
+  margin: 20px;
+}
+
+.event__title {
+  margin-bottom: 30px;
+  color: var(--color-dark);
+  font-size: var(--font-size_title);
+}
+
+.event__title::first-letter {
+  text-transform: uppercase;
+}
+
+.event__no-participants {
+  font-family: var(--font-title);
+  font-size: var(--font-size_title);
+  text-align: center;
+}
+
+.event__no-participants::first-letter {
+  text-transform: capitalize;
+}
