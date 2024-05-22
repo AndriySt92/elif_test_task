@@ -2,7 +2,7 @@
 
 ## Backend Link
 
-https://github.com/AndriySt92/elif_test_task_backend
+https://github.com/AndriySt92/elifTech_backend
 
 ## Frontend
 
