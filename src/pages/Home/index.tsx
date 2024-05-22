@@ -10,7 +10,7 @@ export const Home = () => {
   const [sortValue, setSortValue] = useState<string>("")
   const [page, setPage] = useState<number>(1)
   const [totalPages, setTotalPages] = useState<number>(0)
-  const [limit, setLimit] = useState<number>(12)
+  const [limit, setLimit] = useState<number>(9)
 
   const { data, isLoading, isError } = useGetEventsQuery({
     page,
