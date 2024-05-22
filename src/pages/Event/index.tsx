@@ -19,20 +19,22 @@ export const Event = () => {
   }, [data])
 
   useEffect(() => {
-    if (filterValue) {
-      setParticipants(
-        [...(data?.participants as Participant[])].filter(
-          participant =>
-            participant.fullName
-              .toLowerCase()
-              .startsWith(filterValue.toLowerCase()) ||
-            participant.email
-              .toLowerCase()
-              .startsWith(filterValue.toLowerCase()),
-        ),
-      )
-    } else {
-      setParticipants(data?.participants as Participant[])
+    if (data) {
+      if (filterValue) {
+        setParticipants(
+          [...data.participants].filter(
+            participant =>
+              participant.fullName
+                .toLowerCase()
+                .startsWith(filterValue.toLowerCase()) ||
+              participant.email
+                .toLowerCase()
+                .startsWith(filterValue.toLowerCase()),
+          ),
+        )
+      } else {
+        setParticipants(data?.participants as Participant[])
+      }
     }
   }, [filterValue])
 
